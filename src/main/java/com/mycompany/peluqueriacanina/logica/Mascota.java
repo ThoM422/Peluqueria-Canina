@@ -12,7 +12,6 @@ public class Mascota implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
-    private int num_cliente;
     private String nombre;
     private String raza;
     private String color;
@@ -25,9 +24,8 @@ public class Mascota implements Serializable {
     public Mascota() {
     }
 
-    public Mascota(int id,int num_cliente, String nombre, String raza, String color, String alergico, String atencion_especial, String observaciones, Duenio unDuenio) {
+    public Mascota(int id, String nombre, String raza, String color, String alergico, String atencion_especial, String observaciones, Duenio unDuenio) {
         this.id=id;
-        this.num_cliente = num_cliente;
         this.nombre = nombre;
         this.raza = raza;
         this.color = color;

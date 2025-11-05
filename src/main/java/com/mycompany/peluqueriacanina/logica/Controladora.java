@@ -1,14 +1,16 @@
 package com.mycompany.peluqueriacanina.logica;
 import com.mycompany.peluqueriacanina.persistencia.ControladoraPersistencia;
+import java.util.List;
 
 
 public class Controladora {
     ControladoraPersistencia controlPersis=new ControladoraPersistencia();
 
-    public void guardar(String nombreMasco, String raza, String color, String observaciones, String celDuenio, String alergico, String atenEsp) {
+    public void guardar(String nombreMasco, String raza, String color, String observaciones,String nombreDuenio, String celDuenio, String alergico, String atenEsp) {
         //Creamos al dueño y le asignamos sus valores.
         Duenio duenio = new Duenio();
         duenio.setCelDuenio(celDuenio);
+        duenio.setNombre(nombreDuenio);
         
         //Creamos a la mascota y le asignamos los valores.
         Mascota masco = new Mascota();
@@ -19,6 +21,14 @@ public class Controladora {
         masco.setAlergico(alergico);
         masco.setAtencion_especial(atenEsp);
         masco.setUnDuenio(duenio);
+        
         controlPersis.guardar(duenio,masco);
+    }
+
+    public List<Mascota> traerMascotas() {
+        //Le pedimos a la persistencia que nos traiga las mascotas.
+        return controlPersis.traerMascotas();
+        
+        
     }
 }

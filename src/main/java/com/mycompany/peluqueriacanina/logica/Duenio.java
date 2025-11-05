@@ -48,7 +48,4 @@ public class Duenio implements Serializable {
     public void setCelDuenio(String celDuenio) {
         this.celDuenio = celDuenio;
     }
-    
-    
-    
 }
