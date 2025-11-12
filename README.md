@@ -23,7 +23,7 @@ La aplicación permite realizar las siguientes funciones clave para la gestión 
 
 * **Registro de Clientes:** Almacena la información de contacto del dueño de la mascota.
 * **Registro de Mascotas:** Captura datos específicos de la mascota (nombre, raza, color, alergias, atención especial y observaciones a tener en cuenta).
-* **Gestión de Datos:** Permite **C**rear, **R**eferenciar (leer), **A**ctualizar y **D**ar de baja (eliminar) la información de clientes y mascotas.
+* **Gestión de Datos:** Permite crear, referenciar (leer), actualizar, limpiar información y dar de baja (eliminar) la información de clientes y mascotas.
 ---
 
 ## 📝 Autor
